@@ -5,7 +5,7 @@ contract Login {
     event LoginAttempt(address sender, string challenge);
 
     function login(string challenge) {
-        LoginAttempt(msg.sender, challenge);
+        emit LoginAttempt(msg.sender, challenge);
     }
 
 }

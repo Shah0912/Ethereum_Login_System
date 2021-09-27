@@ -4,7 +4,12 @@ module.exports = {
       host: "localhost",
       port: 8545,
       network_id: "*", // Match any network id
-      from: '0xf7529b8afa4849fc4c0682dd27275eb8422fb4e7'
+      // from: '0xf7529b8afa4849fc4c0682dd27275eb8422fb4e7'
     }
-  }
+  },
+  compilers: {
+    solc: {
+      version: "^0.4.0",
+    }
+  },
 };
